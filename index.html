@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2048GAME</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link href="img/favicon.png" rel="shortcut icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048GAME</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="img/favicon.png" rel="shortcut icon">
 </head>
+
 <body onkeydown="keyboardEvents()">
   <div id="heander">
     <div id="my">
       <img src="img/favicon.png">
       <span id="myid">
-         <a href="https://www.226yzy.com">星空下的YZY</a>
-      </span>  
-    </div>   
+        <a href="https://www.226yzy.com">星空下的YZY</a>
+      </span>
+    </div>
   </div>
-  
+
   <div id="theMark">
     <div>当前分数为 <span id="mark"></span> 分</div>
     <button id="newgame" onclick="main()"><span>NEW GAME</span></button>
   </div>
   <!-- cellspacing属性可设置或返回在表格中的单元格之间的空白量 -->
-  <table id="maintable" cellspacing="10"></table> 
+  <table id="maintable" cellspacing="10"></table>
 
-  <div id="gameover">GAME OVER</div>
-  
+  <div id="gameover"></div>
+
 </body>
 <script src="js/main2048.js"></script>
-<!-- 看板娘 -->
+
+
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/226yzy/live2d-widget/autoload.js"></script>
 <script type="text/javascript">
-  var OriginTitile=document.title,st;
-  document.addEventListener("visibilitychange",function(){
-      document.hidden?(document.title="ヽ(●-`Д´-)ノ别跑稍等",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ干得漂亮，成功了！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+  var OriginTitile = document.title,
+    st;
+  document.addEventListener("visibilitychange", function () {
+    document.hidden ? (document.title = "ヽ(●-`Д´-)ノ别跑稍等", clearTimeout(st)) : (document.title = "(Ő∀Ő3)ノ干得漂亮，成功了！",
+      st = setTimeout(function () {
+        document.title = OriginTitile
+      }, 3e3))
   })
 </script>
+
+<!-- 百度统计 -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?22dbcfcfb0678c74968f1f95135cf022";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
 </html>
