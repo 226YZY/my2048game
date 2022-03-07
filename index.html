@@ -8,6 +8,9 @@
   <title>2048GAME</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="img/favicon.png" rel="shortcut icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <script src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
 </head>
 
 <body onkeydown="keyboardEvents()">
@@ -15,7 +18,7 @@
     <div id="my">
       <img src="img/favicon.png">
       <span id="myid">
-        <a href="https://www.226yzy.com">星空下的YZY</a>
+        <a href="https://www.226yzy.com">星空下的YZY-我的博客</a>
       </span>
     </div>
   </div>
@@ -32,8 +35,10 @@
 </body>
 <script src="js/main2048.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<!--音乐播放器-->
+<meting-js id="8357509656" server="tencent" type="playlist" fixed="true" mini="true" listFolded="true" order="random"
+  autoplay="false" muted></meting-js>
+<!--看板娘-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/226yzy/live2d-widget/autoload.js"></script>
 <script type="text/javascript">

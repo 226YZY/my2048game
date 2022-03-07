@@ -256,11 +256,11 @@ function isover() {
             youwin = parseInt(td.innerHTML);
         }
         if (td.innerHTML == "") {
-
+            //空值跳过
         } else if (i <= (mapx - 1) * mapy && td.innerHTML == document.getElementById(i + mapy).innerHTML) {
-
+            //判断该格子下方的数是否与之相同
         } else if (i % mapy != 0 && td.innerHTML == document.getElementById(i + 1).innerHTML) {
-
+            //判断该格子右边的数是否与之相同
         } else {
             f++;
         }
@@ -270,5 +270,4 @@ function isover() {
         document.getElementById("gameover").style.display = "block";
         overflag = false;
     }
-    console.log(f + "    isgameover");
 }
